@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+main{
+    height: 100vh;
+    text-align: center;
+}
+
+main p{
+    margin: 0;
+}
+.container {
+    max-width: 600px;
+    padding-block: 3rem;
+    font-family: 'Libre Franklin',sans-serif;
+}
+.container .dashboard{
+    width: 100%;
+}
+.soon{
+    font-size: 3rem;
+    color:  hsl(0, 0%, 59%);
+    margin-block:0.5rem;
+}
+.soon span{
+    color: black;
+}
+.input-button-container{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 1rem;
+    margin-block: 1rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+
+}
+.input-container input{
+    padding-block: 0.5rem;
+   padding-inline: 0.7rem;
+   outline: none;
+   border: 1px solid black;
+   border-radius: 1rem;
+   width: 100%;
+   display: block;
+}
+.error .input-container input{
+    border: 1px solid hsl(354, 100%, 66%);
+}
+
+.input-container p{
+    margin-block: 0.5rem;
+    position: absolute;
+    top: 2rem;
+    font-size: small;
+    color: hsl(354, 100%, 66%);    
+    display: none;
+}
+.error .input-container p{
+    display: block;
+}
+.button{
+   background-color:hsl(223, 87%, 63%);
+   padding-block: 0.5rem;
+   padding-inline: 2rem;
+   border-radius: 1rem;
+   color: #ffff;
+   font-weight: 400;
+   cursor: pointer;
+}
+.button:active{
+    background-color:  hsl(223, 100%, 88%);
+}
+.icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.icon-container div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+ width: 25px;
+    border: 1px solid   hsl(223, 100%, 88%);
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+.icon-container div:hover{
+    background-color:hsl(223, 87%, 63%);
+}
+.icon-container div i{
+    color: hsl(223, 87%, 63%);
+}
+.icon-container div i:hover{
+    color: #ffff;
+}
+.copyright{
+    color:  hsl(0, 0%, 59%);
+}
+
+@media (max-width:426px){
+    .container{
+        padding-inline: 1rem;
+    }
+    .input-button-container{
+       grid-template-columns: unset;
+    }
+    .Subscribe{
+        font-size: 0.8rem;
+    }
+    .soon{
+        font-size: 1.5rem;
+    }
+   .button{
+    margin-top: 1rem;
+   }
+   .copyright{
+    font-size: 0.5rem;
+}
+.logo{
+    
+    margin-block: 1rem;
+}
+}
